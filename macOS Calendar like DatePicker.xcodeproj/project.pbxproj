@@ -11,6 +11,11 @@
 		4975F78020CE36C8003EB5A1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4975F77F20CE36C8003EB5A1 /* ViewController.swift */; };
 		4975F78220CE36CA003EB5A1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4975F78120CE36CA003EB5A1 /* Assets.xcassets */; };
 		4975F78520CE36CA003EB5A1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4975F78320CE36CA003EB5A1 /* Main.storyboard */; };
+		4975F78E20CE3E35003EB5A1 /* CustomDatePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4975F78D20CE3E35003EB5A1 /* CustomDatePicker.swift */; };
+		4975F79C20CE49AE003EB5A1 /* DateEditorWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4975F79720CE49AD003EB5A1 /* DateEditorWindowController.xib */; };
+		4975F79F20CE4A71003EB5A1 /* DateEditorWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4975F79E20CE4A71003EB5A1 /* DateEditorWindow.swift */; };
+		4975F7A120CE4E93003EB5A1 /* DateEditorWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4975F7A020CE4E93003EB5A1 /* DateEditorWindowController.swift */; };
+		4975F7A720CEE79E003EB5A1 /* DateEditorContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4975F7A620CEE79E003EB5A1 /* DateEditorContentView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +26,11 @@
 		4975F78420CE36CA003EB5A1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4975F78620CE36CA003EB5A1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4975F78720CE36CA003EB5A1 /* macOS_Calendar_like_DatePicker.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS_Calendar_like_DatePicker.entitlements; sourceTree = "<group>"; };
+		4975F78D20CE3E35003EB5A1 /* CustomDatePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomDatePicker.swift; sourceTree = "<group>"; };
+		4975F79720CE49AD003EB5A1 /* DateEditorWindowController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DateEditorWindowController.xib; sourceTree = "<group>"; };
+		4975F79E20CE4A71003EB5A1 /* DateEditorWindow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateEditorWindow.swift; sourceTree = "<group>"; };
+		4975F7A020CE4E93003EB5A1 /* DateEditorWindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateEditorWindowController.swift; sourceTree = "<group>"; };
+		4975F7A620CEE79E003EB5A1 /* DateEditorContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateEditorContentView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,12 +65,25 @@
 			children = (
 				4975F77D20CE36C8003EB5A1 /* AppDelegate.swift */,
 				4975F77F20CE36C8003EB5A1 /* ViewController.swift */,
+				4975F78D20CE3E35003EB5A1 /* CustomDatePicker.swift */,
+				4975F79D20CE49BA003EB5A1 /* DateEditorWindow */,
 				4975F78120CE36CA003EB5A1 /* Assets.xcassets */,
 				4975F78320CE36CA003EB5A1 /* Main.storyboard */,
 				4975F78620CE36CA003EB5A1 /* Info.plist */,
 				4975F78720CE36CA003EB5A1 /* macOS_Calendar_like_DatePicker.entitlements */,
 			);
 			path = "macOS Calendar like DatePicker";
+			sourceTree = "<group>";
+		};
+		4975F79D20CE49BA003EB5A1 /* DateEditorWindow */ = {
+			isa = PBXGroup;
+			children = (
+				4975F7A020CE4E93003EB5A1 /* DateEditorWindowController.swift */,
+				4975F79720CE49AD003EB5A1 /* DateEditorWindowController.xib */,
+				4975F7A620CEE79E003EB5A1 /* DateEditorContentView.swift */,
+				4975F79E20CE4A71003EB5A1 /* DateEditorWindow.swift */,
+			);
+			path = DateEditorWindow;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -95,6 +118,7 @@
 				TargetAttributes = {
 					4975F77920CE36C8003EB5A1 = {
 						CreatedOnToolsVersion = 10.0;
+						LastSwiftMigration = 1000;
 					};
 				};
 			};
@@ -123,6 +147,7 @@
 			files = (
 				4975F78220CE36CA003EB5A1 /* Assets.xcassets in Resources */,
 				4975F78520CE36CA003EB5A1 /* Main.storyboard in Resources */,
+				4975F79C20CE49AE003EB5A1 /* DateEditorWindowController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -133,8 +158,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4975F7A720CEE79E003EB5A1 /* DateEditorContentView.swift in Sources */,
+				4975F79F20CE4A71003EB5A1 /* DateEditorWindow.swift in Sources */,
 				4975F78020CE36C8003EB5A1 /* ViewController.swift in Sources */,
 				4975F77E20CE36C8003EB5A1 /* AppDelegate.swift in Sources */,
+				4975F78E20CE3E35003EB5A1 /* CustomDatePicker.swift in Sources */,
+				4975F7A120CE4E93003EB5A1 /* DateEditorWindowController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -269,6 +298,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = "macOS Calendar like DatePicker/macOS_Calendar_like_DatePicker.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -280,6 +310,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.celmaro.macOS-Calendar-like-DatePicker";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 			};
 			name = Debug;
@@ -288,6 +319,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = "macOS Calendar like DatePicker/macOS_Calendar_like_DatePicker.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
