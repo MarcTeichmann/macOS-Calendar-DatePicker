@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		491EBDDC20E8C19500B47367 /* CustomDatePickerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 491EBDDB20E8C19500B47367 /* CustomDatePickerCell.swift */; };
 		4975F77E20CE36C8003EB5A1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4975F77D20CE36C8003EB5A1 /* AppDelegate.swift */; };
 		4975F78020CE36C8003EB5A1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4975F77F20CE36C8003EB5A1 /* ViewController.swift */; };
 		4975F78220CE36CA003EB5A1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4975F78120CE36CA003EB5A1 /* Assets.xcassets */; };
@@ -19,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		491EBDDB20E8C19500B47367 /* CustomDatePickerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomDatePickerCell.swift; sourceTree = "<group>"; };
 		4975F77A20CE36C8003EB5A1 /* macOS Calendar like DatePicker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "macOS Calendar like DatePicker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4975F77D20CE36C8003EB5A1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4975F77F20CE36C8003EB5A1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -66,6 +68,7 @@
 				4975F77D20CE36C8003EB5A1 /* AppDelegate.swift */,
 				4975F77F20CE36C8003EB5A1 /* ViewController.swift */,
 				4975F78D20CE3E35003EB5A1 /* CustomDatePicker.swift */,
+				491EBDDB20E8C19500B47367 /* CustomDatePickerCell.swift */,
 				4975F79D20CE49BA003EB5A1 /* DateEditorWindow */,
 				4975F78120CE36CA003EB5A1 /* Assets.xcassets */,
 				4975F78320CE36CA003EB5A1 /* Main.storyboard */,
@@ -159,6 +162,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4975F7A720CEE79E003EB5A1 /* DateEditorContentView.swift in Sources */,
+				491EBDDC20E8C19500B47367 /* CustomDatePickerCell.swift in Sources */,
 				4975F79F20CE4A71003EB5A1 /* DateEditorWindow.swift in Sources */,
 				4975F78020CE36C8003EB5A1 /* ViewController.swift in Sources */,
 				4975F77E20CE36C8003EB5A1 /* AppDelegate.swift in Sources */,
